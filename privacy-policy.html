@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPS坐标工具 - 隐私政策</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.8;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f8f9fa;
+        }
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #235db4;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 28px;
+        }
+        h2 {
+            color: #235db4;
+            border-bottom: 2px solid #e9ecef;
+            padding-bottom: 10px;
+            margin-top: 35px;
+        }
+        h3 {
+            color: #495057;
+            margin-top: 25px;
+        }
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+            text-indent: 2em;
+        }
+        ul, ol {
+            padding-left: 25px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .highlight {
+            background-color: #e3f2fd;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #235db4;
+            margin: 20px 0;
+        }
+        .important {
+            background-color: #fff3cd;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #ffc107;
+            margin: 20px 0;
+        }
+        .contact {
+            background-color: #f8f9fa;
+            padding: 25px;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+        .last-updated {
+            text-align: center;
+            color: #6c757d;
+            font-size: 14px;
+            margin-top: 40px;
+            padding-top: 25px;
+            border-top: 1px solid #e9ecef;
+        }
+        .table-container {
+            overflow-x: auto;
+            margin: 20px 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 14px;
+        }
+        th, td {
+            border: 1px solid #dee2e6;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f8f9fa;
+            font-weight: 600;
+        }
+        @media (prefers-color-scheme: dark) {
+            body { background-color: #1a1a1a; color: #e0e0e0; }
+            .container { background: #2d2d2d; }
+            h1, h2 { color: #4096FF; }
+            h3 { color: #b0b0b0; }
+            .highlight { background-color: #1e3a5f; border-left-color: #4096FF; }
+            .important { background-color: #3d3520; border-left-color: #ffc107; }
+            .contact { background-color: #3a3a3a; }
+            table { border-color: #4a4a4a; }
+            th { background-color: #3a3a3a; }
+            th, td { border-color: #4a4a4a; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>GPS坐标工具 隐私政策</h1>
+
+        <div class="highlight">
+            <p><strong>生效日期：</strong>2026年9月7日</p>
+            <p><strong>版本：</strong>2.0.0</p>
+            <p>我们非常重视您的隐私保护。本隐私政策说明了GPS坐标工具应用如何处理您的数据。本应用的所有数据均在设备本地处理和存储，我们不会将您的数据传输到我们的服务器或任何第三方服务器。</p>
+        </div>
+
+        <h2>一、我们处理的数据</h2>
+
+        <h3>1.1 您主动提供的数据</h3>
+        <p>当您使用GPS坐标工具时，您可能会主动提供以下信息，这些信息仅存储在您的设备上：</p>
+        <ul>
+            <li><strong>位置坐标信息：</strong>您手动输入的经纬度坐标、地址信息、搜索关键词</li>
+            <li><strong>计算数据：</strong>您输入的测量数据、计算参数、单位设置</li>
+            <li><strong>收藏和备注：</strong>您保存的位置名称、备注信息、自定义标签</li>
+            <li><strong>反馈信息：</strong>您通过客服渠道提供的反馈和建议</li>
+        </ul>
+
+        <h3>1.2 设备本地访问的数据（不收集、不传输）</h3>
+        <p>为提供核心功能，应用在您使用相关功能时会在设备上访问以下数据。这些数据仅在内存中处理或本地存储在您的设备上，绝不会传输到我们的服务器或任何第三方服务器：</p>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>数据类型</th>
+                        <th>访问方式</th>
+                        <th>用途</th>
+                        <th>存储位置</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>精确位置</strong></td>
+                        <td>CoreLocation（需您授权）</td>
+                        <td>提供GPS坐标服务、距离计算和地图功能</td>
+                        <td>仅内存 - 不持久化、不传输</td>
+                    </tr>
+                    <tr>
+                        <td><strong>环境传感器数据</strong></td>
+                        <td>CoreMotion（气压计、磁力计）</td>
+                        <td>显示磁场强度、气压、海拔等环境数据</td>
+                        <td>仅内存 - 不持久化、不传输</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="important">
+            <p><strong>重要提示：</strong>本应用不收集设备标识符（IDFA/IDFV）、设备型号、系统版本、应用版本、使用统计、崩溃日志或任何其他设备信息。本应用不收集或传输地图交互数据（平移/缩放）。您在应用中看到的所有数据都保留在您的设备上。</p>
+        </div>
+
+        <h3>1.3 权限申请说明</h3>
+        <p>为提供完整功能，应用会申请以下权限：</p>
+        <ul>
+            <li><strong>位置权限（使用期间，可选）：</strong>用于获取您当前的GPS坐标，以便在地图上显示和进行测量功能。您可以拒绝此权限，其他功能不受影响。</li>
+            <li><strong>运动权限（可选）：</strong>用于访问气压计和磁力计以获取环境数据。您可以拒绝此权限。</li>
+        </ul>
+
+        <div class="important">
+            <p><strong>重要提示：</strong>权限申请遵循最小必要原则。您可以在设备的「设置」中随时开启或关闭这些权限。关闭权限仅影响相关功能，应用的其他功能继续正常使用。</p>
+        </div>
+
+        <h2>二、数据使用</h2>
+
+        <h3>2.1 本地处理目的</h3>
+        <p>所有数据在您的设备上处理，用于以下目的：</p>
+        <ul>
+            <li><strong>地图显示：</strong>通过Apple MapKit在地图上展示您的位置、标记点和测量区域</li>
+            <li><strong>位置服务：</strong>获取并显示您的当前位置坐标（仅本地）</li>
+            <li><strong>距离测量：</strong>基于您的位置和地图点击计算点之间的距离</li>
+            <li><strong>面积测量：</strong>基于您选择的顶点计算封闭区域的面积</li>
+            <li><strong>坐标转换：</strong>在不同格式（DD、DMS、UTM、MGRS等）之间转换坐标 - 所有计算在本地进行</li>
+            <li><strong>搜索服务：</strong>通过Apple MapKit搜索进行地址和POI搜索 - 您的搜索查询直接发送给Apple，受Apple隐私政策约束，我们不存储</li>
+            <li><strong>环境监测：</strong>显示气压、磁场等环境数据（仅本地）</li>
+            <li><strong>收藏功能：</strong>保存您标记的位置和计算结果，方便后续查看</li>
+            <li><strong>历史记录：</strong>保存您的计算历史，便于重复使用和参考</li>
+        </ul>
+
+        <h3>2.2 使用限制</h3>
+        <p>我们承诺：</p>
+        <ul>
+            <li>不会将您的数据用于与提供应用功能无关的目的</li>
+            <li>不会出售、租赁或以其他方式向第三方提供您的数据用于商业目的</li>
+            <li>不会使用您的数据进行个性化广告推送</li>
+            <li>不会将您的数据传输到我们控制的任何服务器</li>
+        </ul>
+
+        <h2>三、数据保护</h2>
+
+        <h3>3.1 本地存储安全</h3>
+        <ul>
+            <li><strong>本地存储：</strong>您的收藏、历史记录和设置存储在设备本地，受iOS沙盒隔离保护</li>
+            <li><strong>无服务器传输：</strong>本应用不会将您的任何个人数据传输到我们控制的服务器。唯一的网络请求是向Apple MapKit请求地图瓦片和搜索，受Apple隐私政策约束</li>
+            <li><strong>HTTPS加密：</strong>所有与Apple服务的网络通信均使用HTTPS加密协议</li>
+        </ul>
+
+        <h3>3.2 数据安全措施</h3>
+        <p>我们采取以下安全措施保护您的数据：</p>
+        <ul>
+            <li>iOS沙盒隔离机制防止应用数据被其他应用访问</li>
+            <li>所有网络通信使用HTTPS加密协议</li>
+            <li>最小化数据访问 - 仅访问应用功能必需的数据</li>
+            <li>不集成任何分析、广告或追踪SDK</li>
+        </ul>
+
+        <h2>四、您的权利（GDPR与CCPA）</h2>
+
+        <h3>4.1 GDPR数据主体权利</h3>
+        <p>如果您位于欧洲经济区（EEA）、英国或瑞士，根据《通用数据保护条例》（GDPR），您对您的个人数据享有以下权利：</p>
+        <ul>
+            <li><strong>访问权（第15条）：</strong>在应用内查看您存储的所有数据（收藏、历史、设置）</li>
+            <li><strong>更正权（第16条）：</strong>在应用内编辑保存的收藏、备注或设置</li>
+            <li><strong>删除权（第17条）：</strong>删除单个收藏/历史项，或在设置中使用「清除所有数据」一次性删除全部</li>
+            <li><strong>限制处理权（第18条）：</strong>在设备设置中关闭位置和运动权限以停止数据访问</li>
+            <li><strong>数据可携带权（第20条）：</strong>在设置中使用「导出我的数据」功能将所有收藏和历史导出为文件</li>
+            <li><strong>反对权（第21条）：</strong>随时卸载应用或在设置中撤回同意</li>
+            <li><strong>撤回同意权（第7(3)条）：</strong>随时通过「设置 - 隐私 - 撤回同意」撤回您的隐私同意。这将清除所有本地数据并重置应用</li>
+        </ul>
+
+        <h3>4.2 处理的法律依据（GDPR第6条）</h3>
+        <p>我们基于以下法律依据处理您的数据：</p>
+        <ul>
+            <li><strong>同意（第6(1)(a)条）：</strong>用于位置和运动传感器访问 - 您授权后可随时撤回</li>
+            <li><strong>合同履行（第6(1)(b)条）：</strong>为您请求的应用功能所必需的处理</li>
+            <li><strong>合法利益（第6(1)(f)条）：</strong>在设备上存储收藏和历史以提供核心应用体验</li>
+        </ul>
+
+        <h3>4.3 CCPA声明（加州消费者）</h3>
+        <p>如果您是加州居民，根据《加州消费者隐私法》（CCPA）及《加州隐私权利法》（CPRA）的修订，您有权：</p>
+        <ul>
+            <li><strong>知情权：</strong>要求披露我们收集的关于您的个人信息（我们不收集离开您设备的个人信息）</li>
+            <li><strong>删除权：</strong>要求删除您的个人信息（卸载应用或在设置中使用「清除所有数据」）</li>
+            <li><strong>更正权：</strong>要求更正不准确的个人信息</li>
+            <li><strong>选择不出售权：</strong>我们不出售您的个人信息，因此无需选择退出</li>
+            <li><strong>不受歧视权：</strong>您行使权利不会受到歧视性对待</li>
+        </ul>
+
+        <p><strong>不出售或共享：</strong>我们不会为金钱或有价对价出售、共享或披露您的个人信息给第三方。因我们不从事此类行为，无需提供退出链接。</p>
+
+        <h3>4.4 数据保留与删除</h3>
+        <ul>
+            <li><strong>本地数据：</strong>收藏、历史和设置保留在您的设备上，直到您手动删除或卸载应用</li>
+            <li><strong>应用卸载：</strong>卸载应用会自动删除所有本地存储的数据</li>
+            <li><strong>清除数据：</strong>使用「设置 - 清除所有数据」可一次性删除所有本地存储</li>
+            <li><strong>仅内存数据：</strong>实时位置和传感器数据仅在使用功能时保留在内存中，绝不持久化到磁盘</li>
+        </ul>
+
+        <h3>4.5 数据存储说明</h3>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>数据类型</th>
+                        <th>存储位置</th>
+                        <th>存储方式</th>
+                        <th>保留期限</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>收藏记录</td>
+                        <td>设备本地</td>
+                        <td>UserDefaults（JSON编码）</td>
+                        <td>直到您删除或卸载</td>
+                    </tr>
+                    <tr>
+                        <td>历史记录</td>
+                        <td>设备本地</td>
+                        <td>UserDefaults（JSON编码）</td>
+                        <td>直到您删除或卸载</td>
+                    </tr>
+                    <tr>
+                        <td>应用设置</td>
+                        <td>设备本地</td>
+                        <td>UserDefaults</td>
+                        <td>直到应用卸载</td>
+                    </tr>
+                    <tr>
+                        <td>位置信息</td>
+                        <td>仅内存</td>
+                        <td>运行时使用</td>
+                        <td>不持久化 - 功能停止时清除</td>
+                    </tr>
+                    <tr>
+                        <td>传感器数据</td>
+                        <td>仅内存</td>
+                        <td>运行时使用</td>
+                        <td>不持久化 - 功能停止时清除</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h2>五、第三方服务</h2>
+
+        <h3>5.1 Apple MapKit</h3>
+        <p>GPS坐标工具使用Apple MapKit提供以下功能：</p>
+        <ul>
+            <li><strong>地图显示：</strong>地图瓦片和地图渲染由Apple MapKit提供</li>
+            <li><strong>地址和POI搜索：</strong>您输入的搜索查询直接发送至Apple MapKit搜索服务，受Apple隐私政策约束</li>
+        </ul>
+        <p>当您使用这些功能时，Apple可能会根据其自身的隐私政策（https://www.apple.com/legal/privacy/）处理您的搜索查询或地图请求。我们无法访问此数据。Apple的处理受Apple隐私实践约束。</p>
+
+        <h3>5.2 我们不使用的服务</h3>
+        <p>我们承诺：</p>
+        <ul>
+            <li>不使用任何广告或追踪SDK</li>
+            <li>不使用任何数据分析或用户画像服务（无Firebase、Mixpanel、Amplitude等）</li>
+            <li>不使用任何社交媒体SDK</li>
+            <li>不使用第三方地图服务（无OpenStreetMap、Esri、Google Maps等）</li>
+            <li>不使用第三方地理编码服务（无Nominatim等）</li>
+            <li>不集成任何将您的数据传输到第三方服务器的SDK</li>
+        </ul>
+
+        <h2>六、儿童隐私（COPPA）</h2>
+
+        <p>GPS坐标工具遵守《儿童在线隐私保护法》（COPPA）及相关法规。</p>
+        <ul>
+            <li>我们不会故意收集13岁以下儿童的个人信息</li>
+            <li>如果您未满13岁，请在父母或监护人的监督下使用本应用</li>
+            <li>父母如认为其子女在未经同意的情况下向我们提供了个人信息，可通过本政策末尾的联系方式联系我们要求删除</li>
+            <li>本应用不提供应用内购买、不展示广告、不要求账户注册，因此不会从任何用户（包括儿童）收集个人信息</li>
+        </ul>
+
+        <h2>七、信息共享</h2>
+
+        <h3>7.1 共享原则</h3>
+        <p>除以下有限情况外，我们不会与任何第三方共享您的个人信息：</p>
+        <ul>
+            <li><strong>明确同意：</strong>当您明确要求通过应用内分享功能共享（如分享测量结果）时，您对选择共享的内容负责</li>
+            <li><strong>法律要求：</strong>适用法律、法规或有效政府要求所必需时</li>
+        </ul>
+
+        <h3>7.2 无数据经纪商</h3>
+        <p>我们不会与数据经纪商、广告商或任何第三方数据接收方共享数据。</p>
+
+        <h2>八、跨境数据传输</h2>
+
+        <p>您提供的所有数据仅在您的设备上存储和处理。本应用不会将您的个人数据传输到我们控制的任何服务器。</p>
+        <p>唯一的跨境传输发生在您使用地图显示或搜索功能时，您的地图瓦片请求或搜索查询会直接发送给Apple，受Apple隐私政策约束。Apple可能会根据其隐私政策在不同司法管辖区处理此数据。</p>
+
+        <h2>九、隐私政策更新</h2>
+
+        <h3>9.1 更新通知</h3>
+        <p>我们可能会不时更新本隐私政策，以适应新功能或法律要求。</p>
+        <ul>
+            <li>如有重大变更，我们将在应用内显著位置发布通知</li>
+            <li>更新后的政策自发布之日起生效</li>
+            <li>您可以在应用的「设置」页面随时查看当前隐私政策</li>
+        </ul>
+
+        <h3>9.2 版本历史</h3>
+        <ul>
+            <li><strong>v1.0.0（2026年6月13日）：</strong>初始版本</li>
+            <li><strong>v1.1.0（2026年8月2日）：</strong>新增App Privacy数据收集声明章节</li>
+            <li><strong>v2.0.0（2026年9月7日）：</strong>海外合规重大修订 - 删除不实数据收集声明、添加GDPR/CCPA/COPPA合规条款、添加数据导出和同意撤回功能、删除未使用的第三方服务引用</li>
+        </ul>
+
+        <h2>十、App隐私披露</h2>
+
+        <h3>10.1 数据类型披露</h3>
+        <p>根据App Store「App隐私」要求，本应用的数据实践披露如下：</p>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>数据类型</th>
+                        <th>是否收集</th>
+                        <th>用途</th>
+                        <th>关联身份</th>
+                        <th>用于追踪</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>位置数据（精确）</td>
+                        <td>是（仅本地）</td>
+                        <td>应用功能</td>
+                        <td>否</td>
+                        <td>否</td>
+                    </tr>
+                    <tr>
+                        <td>位置数据（粗略）</td>
+                        <td>否</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>用户ID</td>
+                        <td>否</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>设备ID</td>
+                        <td>否</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>使用数据</td>
+                        <td>否</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>产品交互</td>
+                        <td>否</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>诊断数据</td>
+                        <td>否</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>其他数据</td>
+                        <td>否</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="important">
+            <p><strong>说明：</strong>精确位置仅用于应用功能，在本地处理，不与任何用户标识符关联，不用于追踪，不传输到我们的服务器。地图瓦片和搜索请求直接发送给Apple MapKit，受Apple隐私政策约束。</p>
+        </div>
+
+        <h3>10.2 追踪披露（ATT）</h3>
+        <p>根据App Tracking Transparency（ATT）要求：</p>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>项目</th>
+                        <th>状态</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>是否追踪用户</td>
+                        <td>否</td>
+                    </tr>
+                    <tr>
+                        <td>是否使用数据跨应用/网站追踪</td>
+                        <td>否</td>
+                    </tr>
+                    <tr>
+                        <td>是否与数据经纪商共享数据</td>
+                        <td>否</td>
+                    </tr>
+                    <tr>
+                        <td>是否允许第三方追踪</td>
+                        <td>否</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <p>本应用不追踪用户活动，不使用任何追踪技术（包括但不限于IDFA、Cookie、像素标签等）跨应用和网站进行追踪，不与数据经纪商共享任何数据。本应用完全符合App Store审核指南5.1.2（数据使用和共享）要求。</p>
+
+        <h2>十一、联系我们</h2>
+
+        <div class="contact">
+            <h3>联系方式</h3>
+            <p>如果您对本隐私政策有任何疑问、意见或建议，或希望行使您的数据主体权利（GDPR/CCPA），请通过以下方式联系我们：</p>
+            <ul>
+                <li><strong>邮箱：</strong>lovelili2000000@163.com</li>
+                <li><strong>数据主体请求：</strong>使用「设置 - 隐私 - 导出我的数据」或「撤回同意」</li>
+            </ul>
+            <p><strong>响应时间：</strong>我们承诺尽快回复您的询问，通常24小时内给予初步响应。对于GDPR/CCPA请求，我们将依法在30天内回复。</p>
+        </div>
+
+        <h2>十二、法律适用与争议解决</h2>
+
+        <h3>12.1 法律适用</h3>
+        <p>本隐私政策依据适用法律解释。对于位于以下地区的用户：</p>
+        <ul>
+            <li><strong>EEA、英国、瑞士：</strong>GDPR作为主要数据保护框架适用</li>
+            <li><strong>美国加州：</strong>CCPA/CPRA作为主要数据保护框架适用</li>
+            <li><strong>其他地区：</strong>适用的当地数据保护法律适用</li>
+        </ul>
+
+        <h3>12.2 争议解决</h3>
+        <p>对于本隐私政策的任何争议：</p>
+        <ul>
+            <li><strong>EEA/英国用户：</strong>您有权向当地监管机构投诉（见 https://edpb.europa.eu/about-edpb/board/members_en）并寻求司法救济</li>
+            <li><strong>加州用户：</strong>您可以向加州总检察长投诉（https://oag.ca.gov/privacy/privacy-act）</li>
+            <li><strong>一般情况：</strong>双方应首先通过友好协商解决争议</li>
+        </ul>
+
+        <div class="last-updated">
+            <p><strong>最后更新时间：</strong>2026年9月7日</p>
+            <p><strong>版本：</strong>2.0.0</p>
+            <p>感谢您阅读我们的隐私政策。我们致力于保护您的隐私并不断改进隐私保护措施。</p>
+        </div>
+    </div>
+</body>
+</html>
