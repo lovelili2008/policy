@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="考研倒计时隐私政策 - 我们重视您的隐私，所有数据仅存储在您的设备本地，不会上传到服务器。">
+    <meta name="description" content="考研倒计时隐私政策 - 学习数据仅存储在您的设备本地；在您同意后才使用友盟+ 统计收集匿名功能使用数据，可随时关闭。">
     <title>考研倒计时隐私政策</title>
     <style>
         :root {
@@ -140,6 +140,30 @@
             color: var(--text-primary);
         }
 
+        .sdk-card {
+            background-color: var(--bg-secondary);
+            border-radius: 8px;
+            padding: 16px;
+            margin: 12px 0;
+        }
+
+        .sdk-card dl {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 6px 12px;
+            font-size: 14px;
+        }
+
+        .sdk-card dt {
+            color: var(--text-primary);
+            font-weight: 600;
+            white-space: nowrap;
+        }
+
+        .sdk-card dd {
+            color: var(--text-secondary);
+        }
+
         a {
             color: var(--link);
             text-decoration: none;
@@ -164,16 +188,17 @@
         <header class="header">
             <h1>考研倒计时隐私政策</h1>
             <div class="meta">
-                最后更新：2026年9月23日<br>
-                版本：v1.2.0 · 邮箱：lovelili2000000@163.com
+                最后更新：2026年11月1日<br>
+                版本：v1.3.0 · 邮箱：lovelili2000000@163.com
             </div>
         </header>
 
-        <p class="summary">我们承诺保护您的隐私。考研倒计时应用不会收集、传输或存储您的任何个人信息到远程服务器。所有数据仅存储在您的设备本地，您的学习数据完全属于您自己。本应用不包含任何广告、第三方追踪SDK或分析服务。</p>
+        <p class="summary">我们承诺保护您的隐私。您的学习数据（倒计时、学科、学习计划、番茄钟记录、院校信息）全部存储在您的设备本地，不会上传到我们或任何第三方的服务器。<br><br>
+        在您明确同意后，应用会使用第三方统计分析服务（友盟+）收集匿名的功能使用统计，用于了解哪些功能真正被使用。您可以不同意，也可以随时在「设置 → 数据分析」中关闭，关闭后立即停止上报。我们不会收集您输入的任何内容，也不会将数据用于广告投放或跨应用追踪。</p>
 
         <section class="section">
             <h2>1. 信息收集</h2>
-            <p>考研倒计时应用仅在本地设备上存储您主动输入的学习数据，包括：</p>
+            <p><strong>【本地存储的数据（不会上传）】</strong>您在应用内主动输入的学习数据，仅保存在您的设备上：</p>
             <ul>
                 <li>考研日期与倒计时目标设置</li>
                 <li>报考院校与专业信息</li>
@@ -183,12 +208,19 @@
                 <li>通知提醒设置（开关、提醒时间）</li>
                 <li>应用偏好设置（主题颜色、深色模式、屏幕常亮）</li>
             </ul>
-            <p><strong>郑重声明：</strong>我们不会收集您的姓名、邮箱、电话、位置、设备标识符等任何个人身份信息，也不会进行任何形式的数据上传。</p>
+            <p><strong>【统计分析信息（仅在您同意后收集）】</strong></p>
+            <ul>
+                <li>功能使用行为：如新建倒计时、开始番茄钟、勾选学习计划等动作的发生次数与时间</li>
+                <li>应用偏好：主题颜色、深色模式</li>
+                <li>运行环境：应用版本、系统版本、设备型号</li>
+                <li>设备统计标识：由友盟 SDK 采集，仅用于区分不同设备、做去重统计</li>
+            </ul>
+            <p><strong>郑重声明：</strong>我们不会收集您输入的任何内容——倒计时标题、学科名称、院校名称、专业名称、备注均不会上传。我们也不会收集您的姓名、邮箱、电话、位置、通讯录、相册，不会读取 IDFA 用于广告追踪。</p>
         </section>
 
         <section class="section">
             <h2>2. 数据使用</h2>
-            <p>您存储在设备上的数据仅用于以下目的：</p>
+            <p><strong>【本地数据】</strong>仅用于：</p>
             <ul>
                 <li>显示考研倒计时与学习进度</li>
                 <li>管理学科信息与学习计划</li>
@@ -198,21 +230,26 @@
                 <li>在主应用与桌面小组件之间共享数据显示</li>
                 <li>提供个性化的应用界面（主题颜色、深色模式）</li>
             </ul>
-            <p><strong>所有数据处理均在您的设备本地进行</strong>，不会上传到任何服务器或云端。</p>
+            <p><strong>【统计分析信息】</strong>仅用于：</p>
+            <ul>
+                <li>统计各功能的使用频次与留存情况，用于决定后续开发优先级</li>
+                <li>了解应用的整体使用规模与设备分布</li>
+            </ul>
+            <p>统计分析信息<strong>不用于广告投放，不用于跨应用追踪，不用于识别您的个人身份</strong>。</p>
         </section>
 
         <section class="section">
             <h2>3. 数据存储</h2>
-            <p>您的数据使用 iOS 系统提供的本地安全存储机制进行保护：</p>
-            <p><strong>存储项与方式：</strong></p>
+            <p><strong>【本地数据】</strong>使用 iOS 系统提供的本地安全存储机制进行保护：</p>
             <ul>
                 <li>倒计时与学科数据：UserDefaults (App Groups)，共享范围：主应用 + 小组件</li>
                 <li>番茄钟会话与设置：UserDefaults (App Groups)，共享范围：主应用 + 小组件</li>
-                <li>通知设置：UserDefaults (结构化存储)，共享范围：仅主应用</li>
+                <li>通知设置与授权状态：UserDefaults (结构化存储)，共享范围：仅主应用</li>
                 <li>主题与偏好：UserDefaults (App Groups)，共享范围：主应用 + 小组件</li>
             </ul>
             <p><strong>数据架构说明：</strong>应用采用 StorageManager 统一存储架构，所有数据访问通过单一入口管理，并使用 MigrationManager 数据迁移机制保证应用版本升级时已安装用户数据无丢失。</p>
             <p><strong>App Groups 共享：</strong>应用使用 <code>group.com.kaoyan900.shared</code> 应用组权限，仅在主应用与同开发者的桌面小组件之间共享数据，不会与任何其他应用或第三方共享。</p>
+            <p><strong>【统计分析信息】</strong>由友盟在其服务器上按《友盟隐私政策》保存与处理。我们只能查看聚合后的统计报表（如“本周有 X 人使用了番茄钟”），无法从中定位到具体某位用户。</p>
         </section>
 
         <section class="section">
@@ -223,21 +260,30 @@
                 <li>应用组权限 (App Groups)：用于主应用与桌面小组件之间共享倒计时与主题数据（可选）</li>
             </ul>
             <p><strong>权限管理：</strong>所有权限均为可选，您可随时在 iOS 系统的「设置 → 考研倒计时」中开启或关闭各项权限。关闭通知权限不影响应用其他功能的正常使用。</p>
-            <p><strong>不申请的权限：</strong>应用不申请相机、麦克风、位置、通讯录、相片库、日历、健康、蓝牙、Face ID、本地网络等任何敏感权限。</p>
+            <p><strong>不申请的权限：</strong>应用不申请相机、麦克风、位置、通讯录、相片库、日历、健康、蓝牙、Face ID、本地网络等任何敏感权限，也不请求「允许 App 请求跟踪」（ATT）权限——因为本应用不进行跨应用追踪。</p>
         </section>
 
         <section class="section">
-            <h2>5. 第三方服务</h2>
-            <p><strong>本应用不集成任何第三方服务，包括但不限于：</strong></p>
-            <ul>
-                <li>第三方分析服务（如 Google Analytics、Firebase Analytics、友盟统计等）</li>
-                <li>第三方广告服务（如 AdMob、Unity Ads 等）</li>
-                <li>第三方崩溃收集服务（如 Crashlytics、Bugly 等）</li>
-                <li>第三方登录服务（如微信、QQ、微博、Apple Sign In 等）</li>
-                <li>第三方推送服务（如极光推送、个推等）</li>
-                <li>任何第三方数据收集 SDK</li>
-            </ul>
-            <p>应用完全离线运行，无任何网络数据传输，确保您的隐私得到最大程度的保护。</p>
+            <h2>5. 第三方 SDK 清单</h2>
+            <p>为统计功能使用情况，本应用集成了以下第三方 SDK：</p>
+            <div class="sdk-card">
+                <dl>
+                    <dt>SDK 名称</dt>
+                    <dd>友盟+ 移动统计（U-App）</dd>
+                    <dt>提供方</dt>
+                    <dd>友盟同欣（北京）科技有限公司</dd>
+                    <dt>收集的信息类型</dt>
+                    <dd>设备统计标识、设备型号、系统版本、应用版本、应用使用行为（功能使用频次、会话时长）</dd>
+                    <dt>使用目的</dt>
+                    <dd>统计分析，用于了解各功能的使用情况并改进产品</dd>
+                    <dt>启用条件</dt>
+                    <dd>仅在您于首次启动同意屏或「设置 → 数据分析」中开启后才初始化，未开启时不产生任何网络请求</dd>
+                    <dt>隐私政策</dt>
+                    <dd><a href="https://www.umeng.com/page/policy" target="_blank" rel="noopener">https://www.umeng.com/page/policy</a></dd>
+                </dl>
+            </div>
+            <p><strong>关于广告追踪：</strong>我们已通过 SDK 提供的开关关闭其广告归因采集（Apple Search Ads / SKAdNetwork），不将数据用于广告投放或跨应用追踪，也不请求 ATT 追踪授权。</p>
+            <p>除上述统计 SDK 外，本应用不集成任何其他第三方 SDK，也不含任何广告。</p>
         </section>
 
         <section class="section">
@@ -247,25 +293,21 @@
         </section>
 
         <section class="section">
-            <h2>7. 数据删除</h2>
-            <p>您对自己的数据拥有完全控制权，可随时通过以下方式删除：</p>
+            <h2>7. 数据删除与授权撤回</h2>
+            <p>您对自己的数据拥有完全控制权：</p>
             <ul>
-                <li>在应用内「设置」中清除所有数据（如提供该功能）</li>
-                <li>卸载应用，将完全删除应用存储的所有本地数据</li>
-                <li>在 iOS 系统的「设置 → 通用 → iPhone 存储空间 → 考研倒计时」中删除应用</li>
+                <li><strong>撤回统计授权：</strong>在应用内「设置 → 数据分析」关闭开关，关闭后友盟 SDK 立即停止采集与上报</li>
+                <li><strong>删除本地数据：</strong>卸载应用，或在 iOS 系统的「设置 → 通用 → iPhone 存储空间 → 考研倒计时」中删除应用</li>
+                <li><strong>删除已上报的统计数据：</strong>应用内无法直接操作友盟服务器上的历史统计数据，请通过下方邮箱联系我们协助处理</li>
             </ul>
-            <p><strong>删除即彻底：</strong>由于所有数据均存储在本地设备，卸载应用后所有数据将被永久删除且无法恢复，我们服务器不会保留您的任何数据。</p>
+            <p><strong>删除即彻底：</strong>本地数据全部存储在您的设备上，卸载应用后将被永久删除且无法恢复，我们的服务器不会保留您的任何本地学习数据。</p>
         </section>
 
         <section class="section">
             <h2>8. 政策更新</h2>
-            <p>我们可能会不时更新本隐私政策。当发生重大变更时，我们将通过以下方式告知用户：</p>
-            <ul>
-                <li>更新本页面的「最后更新」日期</li>
-                <li>在应用版本更新说明中提示</li>
-                <li>必要时在应用内推送通知</li>
-            </ul>
-            <p>建议您定期查阅本页面以了解最新的隐私政策。继续使用应用即视为您同意更新后的隐私政策。</p>
+            <p>我们可能会不时更新本隐私政策。</p>
+            <p>当发生重大变更——尤其是涉及第三方 SDK、收集的信息类型或使用目的的变化时，我们会更新本页面的「最后更新」日期，并在应用下次启动时重新征求您的同意。我们不会以“继续使用即视为同意”的方式替代您的选择。</p>
+            <p>建议您定期查阅本页面以了解最新的隐私政策。</p>
         </section>
 
         <section class="section">
@@ -275,7 +317,7 @@
                 <li>开发者：lovelili</li>
                 <li>联系邮箱：<a href="mailto:lovelili2000000@163.com">lovelili2000000@163.com</a></li>
                 <li>应用名称：考研倒计时</li>
-                <li>当前版本：1.2.0</li>
+                <li>当前版本：1.3.0</li>
             </ul>
             <p>我们将在收到您的邮件后的合理时间内（通常为 3-5 个工作日）予以回复。</p>
         </section>
